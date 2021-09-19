@@ -52,6 +52,7 @@ def test(cfg, impath):
     plt.plot(lines[idx,0],lines[idx,1],'c.')                        
     plt.plot(lines[idx,2],lines[idx,3],'c.')                        
     plt.axis('off')
+    plt.savefig("predictions.png")
     plt.show()
     
 if __name__ == "__main__":

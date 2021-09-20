@@ -43,7 +43,7 @@ def test(cfg, impath):
     scores = output['lines_score'].numpy()
     idx = scores>args.threshold
 
-    plt.figure(figsize=(20,20))    
+    plt.figure(figsize=(7,7))    
     plt.subplots_adjust(top = 1, bottom = 0, right = 1, left = 0, 
             hspace = 0, wspace = 0)
     plt.imshow(image)

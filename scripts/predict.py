@@ -55,6 +55,8 @@ def test(cfg, impath):
     plt.savefig("predictions.png")
     plt.show()
     
+    return lines, idx
+    
 if __name__ == "__main__":
     cfg.freeze()
     test(cfg,args.img)
